@@ -15,6 +15,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
+        //fetching data into database cmd
         $categorydata = category::get();
         return response()->json($categorydata);
     }
